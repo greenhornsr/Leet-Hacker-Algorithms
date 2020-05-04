@@ -35,10 +35,10 @@ var containsDuplicate = function(nums) {
         //     })
         // return result   
         // }
-    };
+};
 
-
-    // ** TEST MY CODE: ** 
-    // containsDuplicate([2,14,18,22,22])
-    // containsDuplicate([1,2,3,1])
-    containsDuplicate([0,4])
+// COMPLETED, PASSES!
+// ** TEST MY CODE: ** 
+// containsDuplicate([2,14,18,22,22])
+// containsDuplicate([1,2,3,1])
+containsDuplicate([0,4])

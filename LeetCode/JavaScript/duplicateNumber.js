@@ -18,10 +18,6 @@ Your runtime complexity should be less than O(n2).
 There is only one duplicate number in the array, but it could be repeated more than once.
 */
 
-/**
- * @param {number[]} nums
- * @return {number}
- */
 var findDuplicate = function(nums) {
     ht = {}
     let result;
@@ -37,4 +33,6 @@ var findDuplicate = function(nums) {
     return result
 };
 
+
+// Completed, Passes!
 findDuplicate([1,3,4,2,2])
