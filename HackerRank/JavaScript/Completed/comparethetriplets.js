@@ -1,3 +1,5 @@
+// Source: https://www.hackerrank.com/challenges/compare-the-triplets/problem
+
 function compareTriplets(a, b) {
     const results = [0,0]
 

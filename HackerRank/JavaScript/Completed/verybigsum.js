@@ -1,0 +1,19 @@
+// Source: https://www.hackerrank.com/challenges/a-very-big-sum/problem
+
+function aVeryBigSum(ar) {
+    let sum = ar[0];
+    let bigsum;
+    for(let i=1; i<ar.length; i++){
+        sum = sum+=ar[i]
+        bigsum = BigInt(sum)
+    }  
+    // console.log(sum)
+    // console.log(bigsum)
+    return bigsum
+}
+
+// COMPLETE, PASSES!
+// TEST
+// aVeryBigSum([1000000001, 1000000002, 1000000003, 1000000004, 1000000005])
+// aVeryBigSum([1000000001000, 1000000002000, 1000000003000, 1000000004000, 1000000005000])
+aVeryBigSum([10000000010000000, 10000000020000000, 10000000030000000, 10000000040000000, 10000000050000000, 10000000010000000, 10000000020000000, 10000000030000000, 10000000040000000, 10000000050000000, 10000000010000000, 10000000020000000, 10000000030000000, 10000000040000000, 10000000050000000])

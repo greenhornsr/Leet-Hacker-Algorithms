@@ -1,3 +1,5 @@
+// Source: https://www.hackerrank.com/challenges/simple-array-sum/problem
+
 function simpleArraySum(ar) {
     function sum(total, num){
         return total + num
