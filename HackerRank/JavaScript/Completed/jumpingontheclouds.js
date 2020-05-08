@@ -11,15 +11,12 @@ function jumpingOnClouds(c) {
         if(c[k] == 0){
             jumps += 1;
             k += 2;
-            // console.log("plus 2")
         }
         else {
             jumps += 1;
             k += 1;
-            // console.log("plus 1")
         }
     }
-    // console.log(`JUMPS: ${jumps}`)
     return jumps
 }
 
