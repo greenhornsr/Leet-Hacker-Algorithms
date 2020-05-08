@@ -24,11 +24,12 @@ function jumpingOnClouds(c) {
 }
 
 // COMPLETED, PASSES!
-// Time Complexity:  O(log n);
+// Time Complexity:  O(log n) best case; O(n) worst case.
 // Space Complexity:  O(1) - space doesn't change; constant space.
+
 // TEST
 // let input = [0,0,0,1,0,0]   // expected output: 3
 // let input = [0,0,1,0,0,1,0] // expected output: 4
 // let input = [0,1,0,1,0,1,0] // expected output: 3
-let input = [0,0,1,0,1,0,0] // expected output: 3
+let input = [0,0,1,0,1,0,0]    // expected output: 3
 jumpingOnClouds(input)
