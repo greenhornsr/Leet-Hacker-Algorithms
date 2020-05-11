@@ -39,6 +39,7 @@ function removeKthLinkedListNode(head, k) {
     let count = 1
     let length = 0
 
+    console.log("LL HEAD: ", head)
     //  I need length minus k
     //  Can i do this in a single pass?
     while(curr.next !== null){
@@ -67,5 +68,6 @@ arr.forEach(el => {
     sl.add_node(el)
 });
 
+console.log(arr)
 
 removeKthLinkedListNode(sl.head, 4)
