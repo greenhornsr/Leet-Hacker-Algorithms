@@ -21,8 +21,18 @@ class CListNode {
 }
 
 class CSLinkedList {
-    constructor(){
+    constructor() {
         this.head = null; 
         // this.size = 0
+    }
+
+    addnode(val){
+        const newNode = CListNode(val)
+        if(!this.head) {
+            this.head = newNode;
+        }
+        else {
+            this.head.next
+        }
     }
 }
