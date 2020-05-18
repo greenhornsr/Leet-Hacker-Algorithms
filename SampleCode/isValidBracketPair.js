@@ -19,8 +19,8 @@ var isValid = function(str) {
             }
         }
     }
-    console.log(check_arr.length > 0 ? false : true)
-    return check_arr.length > 0 ? false : true;
+    console.log(check_arr.length ? false : true)
+    return check_arr.length ? false : true;
 };
 
 // COMPLETED, PASSES!
