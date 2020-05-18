@@ -56,7 +56,7 @@ var isValidPlusPipes = function(str) {
 };
 
 // COMPLETED, PASSES!
-// TESTS without Pipes ||
+// TESTS without Pipes |X|
 const valstr = '{[()]}'
 const invalstr = '{[(()]}'
 isValid(valstr)
