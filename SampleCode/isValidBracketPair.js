@@ -29,14 +29,15 @@ var isValidPlusPipes = function(str) {
     let check_arr = [];
     for(const el of str){
         let last = check_arr[check_arr.length-1]
+        // load open brackets and pipes
         if(el === '(' || el === '[' || el === '{'){
             check_arr.push(el);
         }
-        if(el === '|' && last !== '|'){
+        else if(el === '|' && last !== '|'){
             check_arr.push(el)
         }
-        else if(check_arr.length){
-            
+        // if there was an opening bracket or pipe, check for closing bracket of the most recently open bracket.
+        else if(check_arr.length){  
             if(last === '(' && el === ')'){
                 check_arr.pop();
             }
