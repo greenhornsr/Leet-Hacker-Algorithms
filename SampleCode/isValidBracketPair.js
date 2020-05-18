@@ -65,5 +65,5 @@ isValid(invalstr)
 // TESTS with Pipes ||
 const valstrpluspipes = '{[(||)]}'
 const invalstrpluspipes = '{[(|(|)|)]}'
-isValidPlusPipes(valstr)
-isValidPlusPipes(invalstr)
+isValidPlusPipes(valstrpluspipes)
+isValidPlusPipes(invalstrpluspipes)
