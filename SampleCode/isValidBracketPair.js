@@ -11,10 +11,10 @@ var isValid = function(str) {
             if(last === '(' && el === ')'){
                 check_arr.pop();
             }
-            if(last === '[' && el === ']'){
+            else if(last === '[' && el === ']'){
                 check_arr.pop();
             }    
-            if(last === '{' && el === '}'){
+            else if(last === '{' && el === '}'){
                 check_arr.pop();
             }
         }
