@@ -50,3 +50,19 @@ console.log(phrase.replace(camelRE, " $1"))  // should increment the $1 when wor
 function sayHello(first_name, last_name){
     console.log(`Hellow there ${first_name} ${last_name}!`)
 }
+
+// Node.js Script
+const oldToNew = (somefunc) => {
+    // Node File System Module
+    const fs = require("fs")
+    const regExp = /function (.+)(\(.+\))(\{.+\})/gms
+
+    fs.readFile("./test2.js", (err, cnt) => {
+        console.log(cnt.toString().replace(regExp, "const $1 = $2 = $3"))
+    })
+}
+
+
+
+
+
