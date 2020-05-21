@@ -1,3 +1,24 @@
+function minimumBribesLEAN(q) {
+    let sum = 0;
+
+    for(let el in q){
+        let originindex = q[el]-1
+        let curr = q[el]
+        
+        if((originindex - el) > 2){
+            console.log("Too chaotic")
+            return
+        }
+        let new_slice = q.slice(Math.max(0, curr-2), el)
+        for(const j in q.slice(Math.max(0, curr-2), el)){
+            if(new_slice[j] > curr){
+                sum +=1
+            } 
+        }
+    }  
+    console.log(sum)
+}
+
 function minimumBribes(q) {
     const start_time = new Date()
     let sum = 0;
@@ -7,19 +28,19 @@ function minimumBribes(q) {
         let originindex = q[el]-1
         let curr = q[el]
         
+        // Too Chaotic Illegal move check
         if((originindex - el) > 2){
             console.log("Too chaotic")
             end_time = new Date();
             console.log(`Operation took ${(end_time.getTime() - start_time.getTime())/1000}sec`);
             return
         }
-        console.log("\ncurrent val: ",curr)
-        console.log("current index: ",el)
+        // Create a slice if we reach this point in code.  Slice size is determined by the greater of current value minus 2 or 0 to current index.
         let new_slice = q.slice(Math.max(0, curr-2), el)
-        console.log("SLICE: ",new_slice, "\n")
-        for(const j in q.slice(Math.max(0, curr-2), el)){
-            console.log("j is: ", j)
-            console.log("q of j :",q[j])
+        // loop through the slice.
+        for(const j in new_slice){
+            // console.log("j is: ", j)
+            // console.log("q of j :",q[j])
             if(new_slice[j] > curr){
                 sum +=1
             } 
@@ -30,6 +51,7 @@ function minimumBribes(q) {
     console.log(`Operation took ${(end_time.getTime() - start_time.getTime())/1000}sec`);
 }
 
+// COMPLETED, PASSES!
 // TESTS 
 minimumBribes([1,2,5,3,7,8,6,4])
 // minimumBribes([2,1,5,3,4])

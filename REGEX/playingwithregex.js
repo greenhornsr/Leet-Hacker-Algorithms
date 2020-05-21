@@ -61,8 +61,3 @@ const oldToNew = (somefunc) => {
         console.log(cnt.toString().replace(regExp, "const $1 = $2 = $3"))
     })
 }
-
-
-
-
-
