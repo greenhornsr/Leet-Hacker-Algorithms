@@ -29,6 +29,7 @@ function solve(nums) {
     let loc = []
     let e = []
     let o = []
+    let result = []
 
     for(const el of nums){
         if(el%2===0){
@@ -40,15 +41,24 @@ function solve(nums) {
             o.push(el)
         }
     }
+    e.sort((a,b) => a-b)
+    o.sort((a,b) => b-a)
     for(const el of loc){
         if(el === 'e'){
-            el = e.unshift()
-            console.log("TEST LOC", loc)
+            // console.log(e.shift())
+            result.push(e.shift())
+            // console.log("TEST RESULT", result)
+        }
+        else if(el === 'o'){
+            // console.log(e.shift())
+            result.push(o.shift())
+            // console.log("TEST RESULT", result)
         }
     }
-    console.log("loc", loc)
-    console.log("e", e.sort())
-    console.log("o", o.sort())
+    console.log("FINAL: ", result)
+    return result
 }
 
+// WORKS?  untested against site...
 solve([8, 13, 11, 90, -5, 4])
+solve([10, 91, 110, 901, -7, 14])
