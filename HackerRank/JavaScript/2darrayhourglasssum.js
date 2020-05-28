@@ -2,32 +2,30 @@
 
 
 function hourglassSum(arr) {
-    let o = 0;       // outer array tracker
-    let max = 0;     // store results
+    let o = 0;                              // outer array tracker
+    let max = Number.NEGATIVE_INFINITY;     // baseline max; Negative_infinity used; all negative array input
 
     while(o < (arr.length - 2)) {
-        // console.log("o: ", o)
         let i = 0;       // inner array top and bottom tracker
         let j = 1;       // inner array center hourglass tracker
         while(i < arr[o].length - 2){
             let sum = 0;     //  hourglass sum results tracker
-            // console.log("i: ", i)
-            let line1 = (arr[o][i] + arr[o][i+1] + arr[o][i+2])
-            // console.log("line 1: ", line1)
-            let line3 = (arr[o+2][i] + arr[o+2][i+1] + arr[o+2][i+2])
-            // console.log("line 3: ", line3)
-            sum += ( line1 + arr[o+1][j] + line3)
-            sum > max ? max = sum : false;
-            // console.log("sum", sum)
-            j++
-            i++
-        }
-        o++
-    }
-    // console.log("Max is: ", max)
-    return max
+            let line1 = (arr[o][i] + arr[o][i+1] + arr[o][i+2]);         // calculate line 1 sum
+            let line3 = (arr[o+2][i] + arr[o+2][i+1] + arr[o+2][i+2]);   // calculate line 3 sum
+
+            sum += ( line1 + arr[o+1][j] + line3)   // sum line 1, 2 and 3
+            sum > max ? max = sum : false;          // set max
+
+            j++;    // increment line 2 tracker
+            i++;    // increment line 1/3 inner array tracker
+        };
+        o++;        // increment outer array tracker
+    };
+    console.log("Max is: ", max)
+    return max;
 }
 
+// COMPLETED, PASSES!
 // Tests
 let test = [[-1, -1,  0, -9, -2, -2],
             [-2, -1, -6, -8, -2, -5],
