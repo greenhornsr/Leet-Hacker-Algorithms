@@ -5,7 +5,11 @@ function repeatedString(s, n) {
     let count = 0;
     let remainder_of_n = n%s.length;
     // console.log("remainder: ", modified_n)
-    if(n > 0 && s.length){
+    if(!s.length || n<= 0) {
+        console.log(a_s)
+        return 0
+    }
+    if(n && s.length){
         for(let i=0; i<s.length; i++) {
             if(s[i] === 'a') {
                 a_s += 1;
@@ -30,8 +34,7 @@ function repeatedString(s, n) {
         }
     }
     console.log(a_s)
-    console.log(typeof(a_s))
     return a_s
 }
 
-repeatedString('', 10)
+repeatedString('aaaaaaaaaaaA', -5)
