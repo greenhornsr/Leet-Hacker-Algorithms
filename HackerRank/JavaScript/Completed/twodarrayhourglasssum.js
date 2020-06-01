@@ -25,7 +25,8 @@ function hourglassSum(arr) {
     return max;
 }
 
-// COMPLETED, PASSES!
+// COMPLETED, PASSES!  
+// My Estimated Time complexity: 0(n log n) - nested while loops.
 // Tests
 let test = [[-1, -1,  0, -9, -2, -2],
             [-2, -1, -6, -8, -2, -5],
