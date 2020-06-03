@@ -14,19 +14,19 @@ function formingMagicSquare(s) {
 
     let i = 0
 
-    // for(let i=0; i<s.length; i++) {
+    for(let i=0; i<s.length; i++) {
     //     if(s[i].length !== s.length) {
     //         return 0  // end function and return 0 if input is not a square
-    //     }
+        console.log(s[i])
+        }
         let row_sum = s[i][0]+s[i][1]+s[i][2];
         let col_sum = s[i][0]+s[i+1][0]+s[i+2][0];
         let dia_sum = s[i][0]+s[i+1][1]+s[+2][2];
-        // console.log(s[i])
         console.log("row: ",row_sum)
         console.log("col: ",col_sum)
         console.log("dia: ",dia_sum)
-
-    // }
+        
+        // }
 
 
 }
