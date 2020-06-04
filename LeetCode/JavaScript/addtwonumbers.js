@@ -8,69 +8,50 @@ function ListNode(val, next) {
 }
 
 var addTwoNumbers = function(l1, l2) {
-    // console.log(l1)
-    // console.log(l2)
-    let l1num = 0;
-    let l2num = 0;
-    let result1 = [];
-    let result2 = [];
-    let l1size = 0;
-    let l2size = 0;
+    let string1 = '';
+    let string2 = '';
     let currl1 = l1;
     let currl2 = l2;
     
-    while(currl1){
-        l1size +=1
-        // console.log("size of l1", l1size)
-        result1.push(currl1.val)
+    while(currl1.next){
+        // l1size +=1
+        string1 = string1 + currl1.val 
         currl1 = currl1.next
     }
-    while(currl2){
-        l2size +=1
-        // console.log("size of l2", l2size)
-        result2.push(currl2.val)
+    while(currl2.next){
+        // l2size +=1
+        string2 = string2 + currl2.val
         currl2 = currl2.next
     }
     
-    let arrlengthresult = l1size > l2size ? l1size - l2size : l2size - l1size
-    // console.log(arrlengthresult)
-    let resultLL = new ListNode(null); 
-    if (arrlengthresult == 0) {
-        
-        for(let i=0; i<=l1size; i++) {
-            if(i === 0) {
-                resultLL = new ListNode(result1[i] + result2[i])
-                // console.log("TTTT", resultLL)
-                continue
-            }
-            else{
-                console.log(i)
-                resultLL.next = new ListNode(result1[i] + result2[i])
-                console.log(resultLL.next)
-            }
-        }
-        
+    let result = (Number(string1) + Number(string2)).toString()
+
+    if (result === 0) {
+        return null
     }
-    // console.log("result LL: ", resultLL)
-    // console.log("result1: ", result1)
-    // console.log("result 2: ", result2)
-    // console.log(resultLL)
-    
+    console.log(buildLL(result))
+    return buildLL(result)
 };
 
-let L1 = [2,4,3]
-let L2 = [5,6,4]
+// TESTS
+let L1 = '243'
+let L2 = '564'
 
-let LL1 = new ListNode(null) 
-let curr = LL1
-for(const num of L1){
-    if(curr.val === null) {
-        curr.val = num
+// Helper Function
+const buildLL = (str) => {
+    let LL1 = new ListNode(null) 
+    let curr = LL1
+    for(const num of str){
+        if(curr.val === null) {
+            curr.val = num
+        }
+        // console.log(num)
+        curr.next = new ListNode(null)
+        curr = curr.next
     }
-    console.log(num)
-    curr.next = new ListNode(num)
-    curr = curr.next
+    // console.log("LL is: ", LL1)
+    return LL1
 }
-console.log("LL1: ", LL1)
-let LL2 = new ListNode()
-addTwoNumbers()
+
+// Test Execution
+addTwoNumbers(buildLL(L1), buildLL(L2))
