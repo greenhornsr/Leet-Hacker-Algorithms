@@ -1,6 +1,6 @@
 // Given a binary tree t, determine whether it is symmetric around its center, i.e.each side mirrors the other.
 
-// build a binary tree.
+// build a binary tree.  *currently unused.*
 function Tree(x) {
     this.value;
     this.left = null;
@@ -18,7 +18,7 @@ const checksymm = (left, right) => {
     }
 
     return checksymm(left.left, right.right) && checksymm(right.right, left.left)
-    
+
 }
 
 // base(non recursive) function for checking symmetry
