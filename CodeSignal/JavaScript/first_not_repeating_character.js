@@ -31,7 +31,8 @@ function first_not_repeating_character(s){
     return '_'
 }
 
-
+// COMPLETED, PASSING!
+// TESTS
 // let s = 'abacabad'
 // let s = 'abacabaabacaba'
 // let s = 'z'
