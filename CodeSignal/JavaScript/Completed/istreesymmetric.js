@@ -18,6 +18,7 @@ const checksymm = (left, right) => {
     }
 
     return checksymm(left.left, right.right) && checksymm(right.right, left.left)
+    
 }
 
 // base(non recursive) function for checking symmetry
