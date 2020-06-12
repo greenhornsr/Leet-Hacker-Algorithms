@@ -3,9 +3,10 @@
 // nums = array; n = first el post x, and start el of y 
 // i.e. x[],y[n]
 const shuffle = (nums, n) => {
-    if(n === nums.length || n===0) {
-        return nums;
-    };
+    // This check isn't necessary for this challenge.  
+    // if(n === nums.length || n===0) {
+    //     return nums;
+    // };
     
     let result_array = [];
 
@@ -22,7 +23,7 @@ const shuffle = (nums, n) => {
 // SPACE COMPLEXITY: 0(n) 
 
 // LEETCODE FEEDBACK: 
-// Runtime: 80 ms, faster than 72.56% of JavaScript online submissions for Shuffle the Array.
+// Runtime: 76 ms, faster than 88.21% of JavaScript online submissions for Shuffle the Array.
 // Memory Usage: 38.4 MB, less than 100.00% of JavaScript online submissions for Shuffle the Array.
 
 // TESTS
