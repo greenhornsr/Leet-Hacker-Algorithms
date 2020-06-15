@@ -16,6 +16,7 @@ function solve(a, b) {
 
 // COMPLETED, PASSES!
     // Solved within 3 minutes.
+    
 /*
 Success!
 Your submission took 1 millisecond.
