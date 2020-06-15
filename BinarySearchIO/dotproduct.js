@@ -10,7 +10,7 @@ function solve(a, b) {
     for(let i=0; i<a.length; i++) {
         result += (a[i]*b[i])
     }
-    console.log(result)
+    // console.log(result)
     return result
 }
 
