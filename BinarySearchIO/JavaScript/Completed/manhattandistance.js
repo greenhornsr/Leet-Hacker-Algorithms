@@ -2,6 +2,7 @@
 // CATEGORY: EASY
 
 // Given integers x0, y0, x1 and y1 return the sum of the absolute differences of their Cartesian coordinates (x0, y0) and (x1, y1).
+    // Absolute refers to the magnitude of a real number regardless of its sign(- negative, + positive)
 
 function solve(x0, y0, x1, y1) {
     // Write your code here
