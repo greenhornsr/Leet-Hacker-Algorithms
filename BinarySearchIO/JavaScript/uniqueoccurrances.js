@@ -44,7 +44,7 @@ function solve(nums) {
 }
 
 // COMPLETED, PASSES!
-    // Completed after 45 mins; 15 minute
+    // Completed after 45 mins; 15 minute time limit; failed to complete in time, but done nonetheless.
 
 /*
 Success!
