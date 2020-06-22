@@ -56,6 +56,7 @@ function solve2(n) {
             test[j] === '1' ? count += 1 : count
         }
     }
+    console.log("count: ", count)
     return count
 }
 
@@ -69,3 +70,5 @@ Your submission was faster than 56.67% of other javascript submissions for this 
 const num = 12
 // solve(num)
 solve2(num)
+
+// fn + control + f5 = RUN
