@@ -66,6 +66,7 @@ Your submission was faster than 56.67% of other javascript submissions for this 
 */
 
 // TESTS
-const num = 2
-solve(num)
-solve2(num)
+const num = 12
+// solve(num)
+// solve2(num)
+solve3(num)
