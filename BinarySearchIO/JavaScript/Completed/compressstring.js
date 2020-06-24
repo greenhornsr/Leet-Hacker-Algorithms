@@ -11,7 +11,7 @@ Constraints:
 */
 
 
-// My First Pass.
+// My First Pass.  I OVER COMPLICATED IT...:(
 function solve(s) {
     // Write your code here
     const ht = {};
@@ -44,6 +44,27 @@ Your submission took 18 milliseconds.
 Your submission was faster than 13.08% of other javascript submissions for this question.
 */
 
+// Alternate Solution
+function solve2(s) {
+    // Write your code here
+    let ret_str = ''
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] !== s[i+1] || i + 1 > s.length) ret_str += s[i]
+    }
+    // console.log(ret_str)
+    return ret_str
+}
+
+// COMPLETED, PASSES!
+
+/*
+Success!
+Your submission took 5 milliseconds.
+Your submission was faster than 97.78% of other javascript submissions for this question.
+*/
+
+
 // TESTS
 let input_str = "aaaaaabbbccccaaaaddf"
-solve(input_str)
+// solve(input_str)
+solve2(input_str)
