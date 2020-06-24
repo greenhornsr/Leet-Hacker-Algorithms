@@ -11,8 +11,7 @@ Constraints:
 
 function solve(arr) {
     // Write your code here
-    const result = Math.max(...arr)
-    return result
+    return Math.max(...arr)
 }
 
 // COMPLETED, PASSES!
@@ -24,7 +23,7 @@ Your submission took 2 milliseconds.
 Your submission was faster than 100.00% of other javascript submissions for this question.
 */
 
-// Alternative Approach
+// Alternative Approach - slower; but functional.
 function solve1(arr) {
     let max = arr[0];
 
