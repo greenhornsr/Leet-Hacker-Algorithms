@@ -24,6 +24,18 @@ Your submission took 2 milliseconds.
 Your submission was faster than 100.00% of other javascript submissions for this question.
 */
 
+// Alternative Approach
+function solve1(arr) {
+    let max = arr[0];
+
+    for(let i=0; i<arr.length; i++) {
+        arr[i] > max ? max = arr[i] : false;
+    }
+    console.log(max);
+    return max
+}
+
 // TESTS
 let myinput = [6, 7, 8, 1, 4]
-solve(myinput)
+// solve(myinput)
+solve1(myinput)
