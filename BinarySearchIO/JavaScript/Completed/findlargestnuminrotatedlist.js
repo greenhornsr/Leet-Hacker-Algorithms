@@ -11,8 +11,8 @@ Constraints:
 
 function solve(arr) {
     // Write your code here
-    // const result = Math.max(...arr)
-    return Math.max(...arr)
+    const result = Math.max(...arr)
+    return result
 }
 
 // COMPLETED, PASSES!
