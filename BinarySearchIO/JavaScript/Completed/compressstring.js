@@ -44,7 +44,7 @@ Your submission took 18 milliseconds.
 Your submission was faster than 13.08% of other javascript submissions for this question.
 */
 
-// Alternate Solution
+// Alternate Better Solution
 function solve2(s) {
     // Write your code here
     let ret_str = ''
