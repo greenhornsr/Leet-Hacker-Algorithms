@@ -29,6 +29,14 @@ function capitalize(s){
     // Completed in under 5 minutes
     // Processes in under 20ms; passes 106/106; zero fails.
 
+// Interesting with REGEX Solution?
+const capitalize2 = s => [
+    s.replace(/(.)(.)?/g, (_, a, b) => a.toUpperCase() + (b || '').toLowerCase()),
+    s.replace(/(.)(.)?/g, (_, a, b) => a.toLowerCase() + (b || '').toUpperCase()),
+];
+
+
 // TESTS
 const input_str = "abcEFOIaliefnaeoahufeEEHOFELMaefgiqqqhenkjnlvnvzlkaLdef"
 capitalize(input_str)
+capitalize2(input_str)
