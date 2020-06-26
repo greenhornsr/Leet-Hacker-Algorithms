@@ -16,3 +16,9 @@ The CITY table is described as follows:
 */
 
 -- QUERY
+SELECT NAME
+FROM CITY 
+WHERE COUNTRYCODE = 'USA' 
+AND POPULATION > 120000;
+
+-- COMPLETED, PASSES!
