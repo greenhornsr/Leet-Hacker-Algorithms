@@ -46,15 +46,12 @@ function solve(s) {
 }
 
 // COMPLETED, PASSED!  
-    // Completed in over an hour.  Edge cases.
+    // Completed in over an hour.  Edge cases got me.
 
 /*
-Longest Substring With Unique Characters
-Given a lowercase alphabet string s, return the length of the longest substring with unique characters.
-
-Constraints
-
-Length of s is at most 5000.  
+Success!
+Your submission took 162 milliseconds.
+Your submission was faster than 100.00% of other javascript submissions for this question.
 */
 
 // TESTS
