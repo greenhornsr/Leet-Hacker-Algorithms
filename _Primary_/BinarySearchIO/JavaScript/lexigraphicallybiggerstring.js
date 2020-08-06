@@ -3,14 +3,14 @@
 
 // First Pass
 function solve(s, t) {
-    console.log("s", s.length)
+    console.log("s: ", s.length)
     console.log("t: ", t.length)
     let trueCountS = 0
     let trueCountT = 0
     for(let i=0; i<t.length; i++) {
         if(s[i] <= t[i]) {
             trueCountS += 1
-            console.log("varS: ", trueCountS)
+            // console.log("varS: ", trueCountS)
         }
         if(t[i] <= s[i]) {
             trueCountT += 1
@@ -19,8 +19,8 @@ function solve(s, t) {
     console.log("varS: ", trueCountS)
     console.log("varT: ", trueCountT)
     return trueCountS === s.length || trueCountT === t.length ?
-    true : 
-    false
+    console.log(true) : 
+    console.log(false)
 }
 
 // Second Pass
@@ -36,3 +36,12 @@ function solve1(s, t) {
     console.log(false)
     return false;
 }
+
+// TESTS
+// const v1 = 'ac'
+// const v2 = 'bb'
+
+const v1 = 'mprjaemkhngqzjuualwjjchppbpinsfcplj'
+const v2 = 'vpzslfmnvrsyzoywawyprwxqqptznziquyt'
+
+solve(v1, v2)
